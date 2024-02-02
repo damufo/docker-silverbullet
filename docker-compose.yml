@@ -7,7 +7,6 @@ services:
     restart: unless-stopped
     volumes:
       - ${DATAFOLDER}:/space
-    restart: unless-stopped
     environment:
       SB_USER: "${USERNAME}:${PASSWORD}"
     networks:
