@@ -5,7 +5,7 @@ services:
     container_name: silverbullet
     image: atareao/silverbullet:latest
     volumes:
-      - ./space:/space
+      - ${DATAFOLDER}:/space
     restart: unless-stopped
     environment:
       SB_USER: "${USERNAME}:${PASSWORD}"
