@@ -3,7 +3,8 @@ version: "3.7"
 services:
   silverbullet:
     container_name: silverbullet
-    image: atareao/silverbullet:latest
+    image: zefhemel/silverbullet:latest
+    restart: unless-stopped
     volumes:
       - ${DATAFOLDER}:/space
     restart: unless-stopped
